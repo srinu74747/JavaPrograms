@@ -1,0 +1,72 @@
+How JVM Works – JVM Architecture?
+  https://www.geeksforgeeks.org/jvm-works-jvm-architecture/
+  
+JVM Shutdown Hook in Java
+  https://www.geeksforgeeks.org/jvm-shutdown-hook-java/
+   Runtime.getRuntime().addShutdownHook(new Thread() )
+  1. Shutdown Hooks may not be executed in some cases!
+  2. Once started, Shutdown Hooks can be forcibly stopped before completion.
+  3. We can have more than one Shutdown Hooks, but their execution order is not guaranteed.
+  4. We cannot register / unregister Shutdown Hooks with in Shutdown Hooks
+  5. Once shutdown sequence starts, it can be stopped by Runtime.halt() only.
+  6. Using shutdown hooks require security permissions.
+  
+Java Class File
+    https://www.geeksforgeeks.org/java-class-file/
+    ClassFile 
+    {
+         magic_number;
+         minor_version;
+         major_version;
+         constant_pool_count;
+         constant_pool[];
+         access_flags;
+         this_class;
+         super_class;
+         interfaces_count;
+         interfaces[];
+         fields_count;
+         fields[];
+         methods_count;
+         methods[];
+         attributes_count;
+         attributes[];
+    }
+    
+JDBC Drivers
+https://www.geeksforgeeks.org/jdbc-drivers/
+1.Java Database Connectivity (JDBC) is an application programming interface (API) for the programming language Java, 
+which defines how a client may access any kind of tabular data, especially relational database.
+2.The JDBC classes are contained in the Java Package java.sql and javax.sql.
+JDBC helps you to write Java applications that manage these three programming activities:
+a.Connect to a data source, like a database.
+b.Send queries and update statements to the database
+c.Retrieve and process the results received from the database in answer to your query
+3.There are 4 types of JDBC drivers:
+a.Type-1 driver or JDBC-ODBC bridge driver
+b.Type-2 driver or Native-API driver
+c.Type-3 driver or Network Protocol driver
+d.Type-4 driver or Thin driver
+
+Is main method compulsory in Java?
+https://www.geeksforgeeks.org/main-method-compulsory-java/
+
+Myth about the file name and class name in Java
+https://www.geeksforgeeks.org/myth-file-name-class-name-java/
+
+How to run java class file which is in different directory?
+https://www.geeksforgeeks.org/run-java-class-file-different-directory/
+
+1.-d option
+2.-cp option
+
+Compile
+    cp_tutorial/proj2/src>javac -d ../classes -cp ../../proj1/classes MainClass.java    
+Run
+    cp_tutorial/proj2/classes>java -cp ../../proj1/classes; MainClass
+    
+Microservices Introduction
+    https://www.geeksforgeeks.org/microservices-introduction/
+    
+Using predefined class name as Class or Variable name in Java
+    https://www.geeksforgeeks.org/using-predefined-class-name-class-variable-name-java/
